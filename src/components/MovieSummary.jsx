@@ -1,4 +1,4 @@
-function MovieCard(props) {
+function MovieSummary(props) {
 
     return (
         <div className="card">
@@ -8,8 +8,10 @@ function MovieCard(props) {
             <p>Rating: {props.movieDetails.rating}</p>
 
             <button onClick={()=> {props.onDelete(props.movieDetails.id)}}>Delete</button>
+
+            <button>More Details</button>
         </div>
     )
 }
 
-export default MovieCard
+export default MovieSummary
